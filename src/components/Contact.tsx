@@ -52,6 +52,7 @@ const MagneticLink = ({ href, children, className = "" }: { href: string, childr
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!ref.current) return
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) return
     const rect = ref.current.getBoundingClientRect()
     const centerX = rect.left + rect.width / 2
     const centerY = rect.top + rect.height / 2
@@ -199,9 +200,9 @@ export default function Contact() {
               <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Socials</h3>
               <div className="flex gap-4 justify-center lg:justify-start">
                 {[
-                  { icon: Github, href: "https://github.com", label: "Github" },
-                  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                  { icon: Instagram, href: "https://instagram.com", label: "Instagram" }
+                  { icon: Github, href: "https://github.com/monebzz", label: "Github" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/in/muhammad-muneeb-azhar-6aaa71319/", label: "LinkedIn" },
+                  { icon: Instagram, href: "https://www.instagram.com/muneebazharr/", label: "Instagram" }
                 ].map((social, i) => (
                   <MagneticLink
                     key={social.label}
@@ -322,7 +323,7 @@ export default function Contact() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="h-full min-h-[400px] flex flex-col items-center justify-center text-center space-y-6 bg-gray-50 rounded-3xl p-8"
+                className="h-full min-h-[400px] flex flex-col items-center justify-center text-center space-y-6 bg-[var(--bg-secondary)] rounded-3xl p-8"
               >
                 <motion.div
                   initial={{ scale: 0 }}
@@ -334,7 +335,7 @@ export default function Contact() {
                 </motion.div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-[var(--text-primary)]">Message Sent!</h3>
-                  <p className="text-gray-600">I'll get back to you as soon as possible.</p>
+                  <p className="text-[var(--text-secondary)]">I'll get back to you as soon as possible.</p>
                 </div>
               </motion.div>
             )}

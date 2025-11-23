@@ -143,7 +143,7 @@ export default function Navigation() {
             {/* Social Icons - 0.75rem spacing between */}
             <div className="social-icons">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-muneeb-azhar-6aaa71319/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon hover:bg-gray-100"
@@ -152,7 +152,7 @@ export default function Navigation() {
                 <Linkedin size={18} className="text-gray-600" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/monebzz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon hover:bg-gray-100"
@@ -161,14 +161,14 @@ export default function Navigation() {
                 <Github size={18} className="text-gray-600" />
               </a>
               <a
-                href="mailto:mahassan@cuilahore.edu.pk"
+                href="mailto:muneebazhar42@gmail.com"
                 className="social-icon hover:bg-gray-100"
                 aria-label="Email"
               >
                 <Mail size={18} className="text-gray-600" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/muneebazharr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon hover:bg-gray-100"
@@ -296,16 +296,16 @@ export default function Navigation() {
                   </button>
 
                   <div className="flex gap-6 mt-4">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
+                    <a href="https://www.linkedin.com/in/muhammad-muneeb-azhar-6aaa71319/" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
                       <Linkedin size={24} />
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
+                    <a href="https://github.com/monebzz" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
                       <Github size={24} />
                     </a>
-                    <a href="mailto:mahassan@cuilahore.edu.pk" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
+                    <a href="mailto:muneebazhar42@gmail.com" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
                       <Mail size={24} />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
+                    <a href="https://www.instagram.com/muneebazharr/" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-primary)] transition-colors">
                       <Instagram size={24} />
                     </a>
                   </div>
