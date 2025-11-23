@@ -409,39 +409,10 @@ body {
   color: var(--accent-primary);
 }
 
-/* Typewriter Animation Styles */
-.typed-text {
-  color: #d3d3d3;
-  position: relative;
-}
 
-.typing-cursor {
-  display: inline-block;
-  width: 3px;
-  height: 1em;
-  background-color: var(--accent-primary);
-  margin-left: 2px;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-
-  0%,
-  49% {
-    opacity: 1;
-  }
-
-  50%,
-  100% {
-    opacity: 0;
-  }
-}
 
 .hero-content {
-  opacity: 0;
-  animation: simpleFadeIn 1.2s var(--ease-premium) forwards;
-  animation-delay: 2.5s;
-  /* After typing animation */
+  /* Animation handled by Framer Motion */
 }
 
 @keyframes simpleFadeIn {
@@ -490,10 +461,6 @@ body {
   /* Centers horizontally and provides equal spacing */
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   border: 5px solid white;
-  opacity: 0;
-  animation: fadeInOnly 1.2s var(--ease-premium) forwards;
-  animation-delay: 2s;
-  /* After typing completes */
   transition: transform 0.3s ease;
   /* Only for hover */
 }

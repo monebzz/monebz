@@ -272,8 +272,8 @@ export default function Navigation() {
                   </Link>
                 </motion.div>
 
-                <motion.div variants={itemVariants} className="w-full flex flex-col items-center gap-6 pt-8 mt-4 border-t border-[var(--border-light)]">
-                  <div className="flex items-center gap-2 text-green-600 bg-green-500/10 px-4 py-2 rounded-full">
+                <motion.div variants={itemVariants} className="w-full flex flex-col items-center gap-6 pt-8 mt-4">
+                  <div className="flex items-center gap-3 text-green-600 bg-green-500/10 !px-4 !py-1 rounded-full">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                     <span className="font-medium">Available for hire</span>
                   </div>
