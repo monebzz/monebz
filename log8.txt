@@ -1,0 +1,261 @@
+build	Set up job	﻿2026-03-23T14:00:24.7355578Z Current runner version: '2.332.0'
+build	Set up job	2026-03-23T14:00:24.7390262Z ##[group]Runner Image Provisioner
+build	Set up job	2026-03-23T14:00:24.7392032Z Hosted Compute Agent
+build	Set up job	2026-03-23T14:00:24.7392671Z Version: 20260213.493
+build	Set up job	2026-03-23T14:00:24.7393363Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+build	Set up job	2026-03-23T14:00:24.7394054Z Build Date: 2026-02-13T00:28:41Z
+build	Set up job	2026-03-23T14:00:24.7394837Z Worker ID: {d40d7441-bece-4797-919b-5666222bc471}
+build	Set up job	2026-03-23T14:00:24.7395548Z Azure Region: westcentralus
+build	Set up job	2026-03-23T14:00:24.7396156Z ##[endgroup]
+build	Set up job	2026-03-23T14:00:24.7397774Z ##[group]Operating System
+build	Set up job	2026-03-23T14:00:24.7398441Z Ubuntu
+build	Set up job	2026-03-23T14:00:24.7398947Z 24.04.3
+build	Set up job	2026-03-23T14:00:24.7399628Z LTS
+build	Set up job	2026-03-23T14:00:24.7400347Z ##[endgroup]
+build	Set up job	2026-03-23T14:00:24.7401179Z ##[group]Runner Image
+build	Set up job	2026-03-23T14:00:24.7402610Z Image: ubuntu-24.04
+build	Set up job	2026-03-23T14:00:24.7403501Z Version: 20260309.50.1
+build	Set up job	2026-03-23T14:00:24.7405426Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260309.50/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-03-23T14:00:24.7408495Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260309.50
+build	Set up job	2026-03-23T14:00:24.7410158Z ##[endgroup]
+build	Set up job	2026-03-23T14:00:24.7412320Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-03-23T14:00:24.7414770Z Contents: read
+build	Set up job	2026-03-23T14:00:24.7415424Z Metadata: read
+build	Set up job	2026-03-23T14:00:24.7415959Z Pages: write
+build	Set up job	2026-03-23T14:00:24.7416714Z ##[endgroup]
+build	Set up job	2026-03-23T14:00:24.7419272Z Secret source: Actions
+build	Set up job	2026-03-23T14:00:24.7419988Z Prepare workflow directory
+build	Set up job	2026-03-23T14:00:24.7749494Z Prepare all required actions
+build	Set up job	2026-03-23T14:00:24.7787941Z Getting action download info
+build	Set up job	2026-03-23T14:00:25.2873284Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	Set up job	2026-03-23T14:00:25.4331719Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	Set up job	2026-03-23T14:00:25.5226181Z Download action repository 'actions/configure-pages@v5' (SHA:983d7736d9b0ae728b81ab479565c72886d7745b)
+build	Set up job	2026-03-23T14:00:26.3238173Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	Set up job	2026-03-23T14:00:26.4496430Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+build	Set up job	2026-03-23T14:00:27.1639559Z Getting action download info
+build	Set up job	2026-03-23T14:00:27.3370734Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build	Set up job	2026-03-23T14:00:27.4797007Z Complete job name: build
+build	Checkout	﻿2026-03-23T14:00:27.5632204Z ##[group]Run actions/checkout@v4
+build	Checkout	2026-03-23T14:00:27.5633528Z with:
+build	Checkout	2026-03-23T14:00:27.5634267Z   repository: monebzz/monebz
+build	Checkout	2026-03-23T14:00:27.5635408Z   token: ***
+build	Checkout	2026-03-23T14:00:27.5636142Z   ssh-strict: true
+build	Checkout	2026-03-23T14:00:27.5636900Z   ssh-user: git
+build	Checkout	2026-03-23T14:00:27.5637674Z   persist-credentials: true
+build	Checkout	2026-03-23T14:00:27.5638535Z   clean: true
+build	Checkout	2026-03-23T14:00:27.5639316Z   sparse-checkout-cone-mode: true
+build	Checkout	2026-03-23T14:00:27.5640266Z   fetch-depth: 1
+build	Checkout	2026-03-23T14:00:27.5641030Z   fetch-tags: false
+build	Checkout	2026-03-23T14:00:27.5641985Z   show-progress: true
+build	Checkout	2026-03-23T14:00:27.5642777Z   lfs: false
+build	Checkout	2026-03-23T14:00:27.5643493Z   submodules: false
+build	Checkout	2026-03-23T14:00:27.5644283Z   set-safe-directory: true
+build	Checkout	2026-03-23T14:00:27.5645534Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:27.6777568Z Syncing repository: monebzz/monebz
+build	Checkout	2026-03-23T14:00:27.6780362Z ##[group]Getting Git version info
+build	Checkout	2026-03-23T14:00:27.6781954Z Working directory is '/home/runner/work/monebz/monebz'
+build	Checkout	2026-03-23T14:00:27.6783722Z [command]/usr/bin/git version
+build	Checkout	2026-03-23T14:00:27.6822386Z git version 2.53.0
+build	Checkout	2026-03-23T14:00:27.6850483Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:27.6866974Z Temporarily overriding HOME='/home/runner/work/_temp/853446f1-9e39-4c3f-be13-39a5c099136f' before making global git config changes
+build	Checkout	2026-03-23T14:00:27.6871863Z Adding repository directory to the temporary git global config as a safe directory
+build	Checkout	2026-03-23T14:00:27.6880558Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/monebz/monebz
+build	Checkout	2026-03-23T14:00:27.6921062Z Deleting the contents of '/home/runner/work/monebz/monebz'
+build	Checkout	2026-03-23T14:00:27.6925819Z ##[group]Initializing the repository
+build	Checkout	2026-03-23T14:00:27.6931313Z [command]/usr/bin/git init /home/runner/work/monebz/monebz
+build	Checkout	2026-03-23T14:00:27.7025903Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Checkout	2026-03-23T14:00:27.7029067Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Checkout	2026-03-23T14:00:27.7031661Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Checkout	2026-03-23T14:00:27.7033114Z hint: call:
+build	Checkout	2026-03-23T14:00:27.7033809Z hint:
+build	Checkout	2026-03-23T14:00:27.7034829Z hint: 	git config --global init.defaultBranch <name>
+build	Checkout	2026-03-23T14:00:27.7035939Z hint:
+build	Checkout	2026-03-23T14:00:27.7037321Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Checkout	2026-03-23T14:00:27.7039106Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Checkout	2026-03-23T14:00:27.7040497Z hint:
+build	Checkout	2026-03-23T14:00:27.7041211Z hint: 	git branch -m <name>
+build	Checkout	2026-03-23T14:00:27.7042458Z hint:
+build	Checkout	2026-03-23T14:00:27.7043731Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Checkout	2026-03-23T14:00:27.7045894Z Initialized empty Git repository in /home/runner/work/monebz/monebz/.git/
+build	Checkout	2026-03-23T14:00:27.7048711Z [command]/usr/bin/git remote add origin https://github.com/monebzz/monebz
+build	Checkout	2026-03-23T14:00:27.7082141Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:27.7083506Z ##[group]Disabling automatic garbage collection
+build	Checkout	2026-03-23T14:00:27.7085704Z [command]/usr/bin/git config --local gc.auto 0
+build	Checkout	2026-03-23T14:00:27.7115683Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:27.7116936Z ##[group]Setting up auth
+build	Checkout	2026-03-23T14:00:27.7122728Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Checkout	2026-03-23T14:00:27.7154694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Checkout	2026-03-23T14:00:27.7470623Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Checkout	2026-03-23T14:00:27.7504787Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Checkout	2026-03-23T14:00:27.7759303Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Checkout	2026-03-23T14:00:27.7798205Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Checkout	2026-03-23T14:00:27.8066814Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Checkout	2026-03-23T14:00:27.8104409Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:27.8106708Z ##[group]Fetching the repository
+build	Checkout	2026-03-23T14:00:27.8115499Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2ee1be7bdbbf5e40cc69c82c9b228e7f26d22d1a:refs/remotes/origin/main
+build	Checkout	2026-03-23T14:00:28.4102918Z From https://github.com/monebzz/monebz
+build	Checkout	2026-03-23T14:00:28.4105636Z  * [new ref]         2ee1be7bdbbf5e40cc69c82c9b228e7f26d22d1a -> origin/main
+build	Checkout	2026-03-23T14:00:28.4138404Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:28.4140079Z ##[group]Determining the checkout info
+build	Checkout	2026-03-23T14:00:28.4142151Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:28.4147022Z [command]/usr/bin/git sparse-checkout disable
+build	Checkout	2026-03-23T14:00:28.4189665Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Checkout	2026-03-23T14:00:28.4217882Z ##[group]Checking out the ref
+build	Checkout	2026-03-23T14:00:28.4222298Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Checkout	2026-03-23T14:00:28.4339121Z Switched to a new branch 'main'
+build	Checkout	2026-03-23T14:00:28.4342103Z branch 'main' set up to track 'origin/main'.
+build	Checkout	2026-03-23T14:00:28.4349680Z ##[endgroup]
+build	Checkout	2026-03-23T14:00:28.4385846Z [command]/usr/bin/git log -1 --format=%H
+build	Checkout	2026-03-23T14:00:28.4409505Z 2ee1be7bdbbf5e40cc69c82c9b228e7f26d22d1a
+build	Setup Node	﻿2026-03-23T14:00:28.4729313Z ##[group]Run actions/setup-node@v4
+build	Setup Node	2026-03-23T14:00:28.4730021Z with:
+build	Setup Node	2026-03-23T14:00:28.4730575Z   node-version: 20
+build	Setup Node	2026-03-23T14:00:28.4731153Z   cache: npm
+build	Setup Node	2026-03-23T14:00:28.4732248Z   always-auth: false
+build	Setup Node	2026-03-23T14:00:28.4732855Z   check-latest: false
+build	Setup Node	2026-03-23T14:00:28.4733627Z   token: ***
+build	Setup Node	2026-03-23T14:00:28.4734196Z ##[endgroup]
+build	Setup Node	2026-03-23T14:00:28.6509629Z Found in cache @ /opt/hostedtoolcache/node/20.20.1/x64
+build	Setup Node	2026-03-23T14:00:28.6516843Z ##[group]Environment details
+build	Setup Node	2026-03-23T14:00:28.9972687Z node: v20.20.1
+build	Setup Node	2026-03-23T14:00:28.9973217Z npm: 10.8.2
+build	Setup Node	2026-03-23T14:00:28.9973589Z yarn: 1.22.22
+build	Setup Node	2026-03-23T14:00:28.9974898Z ##[endgroup]
+build	Setup Node	2026-03-23T14:00:29.0001554Z [command]/opt/hostedtoolcache/node/20.20.1/x64/bin/npm config get cache
+build	Setup Node	2026-03-23T14:00:29.1128153Z /home/runner/.npm
+build	Setup Node	2026-03-23T14:00:29.3541190Z npm cache is not found
+build	Setup Pages	﻿2026-03-23T14:00:29.3706091Z ##[group]Run actions/configure-pages@v5
+build	Setup Pages	2026-03-23T14:00:29.3706402Z with:
+build	Setup Pages	2026-03-23T14:00:29.3706593Z   static_site_generator: next
+build	Setup Pages	2026-03-23T14:00:29.3706978Z   token: ***
+build	Setup Pages	2026-03-23T14:00:29.3707165Z   enablement: false
+build	Setup Pages	2026-03-23T14:00:29.3707352Z ##[endgroup]
+build	Setup Pages	2026-03-23T14:00:29.7588707Z Using default blank configuration
+build	Setup Pages	2026-03-23T14:00:29.7590159Z Injecting property=output and value=export in:
+build	Setup Pages	2026-03-23T14:00:29.7591282Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7592466Z const nextConfig = {}
+build	Setup Pages	2026-03-23T14:00:29.7593218Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7593947Z 
+build	Setup Pages	2026-03-23T14:00:29.7648986Z Found configuration object in indirect module export
+build	Setup Pages	2026-03-23T14:00:29.7650287Z Injection successful, new configuration:
+build	Setup Pages	2026-03-23T14:00:29.7650921Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7651927Z const nextConfig = {output: "export"}
+build	Setup Pages	2026-03-23T14:00:29.7652653Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7652931Z 
+build	Setup Pages	2026-03-23T14:00:29.7653279Z Injecting property=basePath and value=/monebz in:
+build	Setup Pages	2026-03-23T14:00:29.7653966Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7654556Z const nextConfig = {output: "export"}
+build	Setup Pages	2026-03-23T14:00:29.7655077Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7665286Z 
+build	Setup Pages	2026-03-23T14:00:29.7665726Z Found configuration object in indirect module export
+build	Setup Pages	2026-03-23T14:00:29.7666420Z Injection successful, new configuration:
+build	Setup Pages	2026-03-23T14:00:29.7677470Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7678242Z const nextConfig = {basePath: "/monebz",output: "export"}
+build	Setup Pages	2026-03-23T14:00:29.7678838Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7679097Z 
+build	Setup Pages	2026-03-23T14:00:29.7679557Z Injecting property=images.unoptimized and value=true in:
+build	Setup Pages	2026-03-23T14:00:29.7680229Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7680919Z const nextConfig = {basePath: "/monebz",output: "export"}
+build	Setup Pages	2026-03-23T14:00:29.7681679Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7681963Z 
+build	Setup Pages	2026-03-23T14:00:29.7682225Z Found configuration object in indirect module export
+build	Setup Pages	2026-03-23T14:00:29.7682686Z Injection successful, new configuration:
+build	Setup Pages	2026-03-23T14:00:29.7683042Z // Default Pages configuration for Next
+build	Setup Pages	2026-03-23T14:00:29.7683561Z const nextConfig = {images: {unoptimized: true},basePath: "/monebz",output: "export"}
+build	Setup Pages	2026-03-23T14:00:29.7684006Z module.exports = nextConfig
+build	Setup Pages	2026-03-23T14:00:29.7684157Z 
+build	Restore cache	﻿2026-03-23T14:00:30.0381059Z ##[group]Run actions/cache@v4
+build	Restore cache	2026-03-23T14:00:30.0381648Z with:
+build	Restore cache	2026-03-23T14:00:30.0381892Z   path: .next/cache
+build	Restore cache	
+build	Restore cache	2026-03-23T14:00:30.0382573Z   key: Linux-nextjs-86ee21c469e8b6285c0e9bfba5ec5bf4bfa0f7e4e7391e6664ea7ef30235774b-8bb4ea25eb8f58a3b94cb828683a93feff8ec8e32746ead587c58ab1d9f0ddd8
+build	Restore cache	2026-03-23T14:00:30.0383503Z   restore-keys: Linux-nextjs-86ee21c469e8b6285c0e9bfba5ec5bf4bfa0f7e4e7391e6664ea7ef30235774b-
+build	Restore cache	
+build	Restore cache	2026-03-23T14:00:30.0383989Z   enableCrossOsArchive: false
+build	Restore cache	2026-03-23T14:00:30.0384226Z   fail-on-cache-miss: false
+build	Restore cache	2026-03-23T14:00:30.0384433Z   lookup-only: false
+build	Restore cache	2026-03-23T14:00:30.0384622Z   save-always: false
+build	Restore cache	2026-03-23T14:00:30.0384793Z env:
+build	Restore cache	2026-03-23T14:00:30.0384953Z   GITHUB_PAGES: true
+build	Restore cache	2026-03-23T14:00:30.0385458Z ##[endgroup]
+build	Restore cache	2026-03-23T14:00:30.3983568Z Cache not found for input keys: Linux-nextjs-86ee21c469e8b6285c0e9bfba5ec5bf4bfa0f7e4e7391e6664ea7ef30235774b-8bb4ea25eb8f58a3b94cb828683a93feff8ec8e32746ead587c58ab1d9f0ddd8, Linux-nextjs-86ee21c469e8b6285c0e9bfba5ec5bf4bfa0f7e4e7391e6664ea7ef30235774b-
+build	Install dependencies	﻿2026-03-23T14:00:30.4079694Z ##[group]Run npm ci
+build	Install dependencies	2026-03-23T14:00:30.4079978Z [36;1mnpm ci[0m
+build	Install dependencies	2026-03-23T14:00:30.5445033Z shell: /usr/bin/bash -e {0}
+build	Install dependencies	2026-03-23T14:00:30.5445287Z env:
+build	Install dependencies	2026-03-23T14:00:30.5445464Z   GITHUB_PAGES: true
+build	Install dependencies	2026-03-23T14:00:30.5445664Z ##[endgroup]
+build	Install dependencies	2026-03-23T14:00:34.4846813Z npm warn deprecated @studio-freight/lenis@1.0.42: The '@studio-freight/lenis' package has been renamed to 'lenis'. Please update your dependencies: npm install lenis and visit the documentation: https://www.npmjs.com/package/lenis
+build	Install dependencies	2026-03-23T14:00:43.3138057Z 
+build	Install dependencies	2026-03-23T14:00:43.3139054Z added 386 packages, and audited 387 packages in 13s
+build	Install dependencies	2026-03-23T14:00:43.3139828Z 
+build	Install dependencies	2026-03-23T14:00:43.3140220Z 147 packages are looking for funding
+build	Install dependencies	2026-03-23T14:00:43.3140919Z   run `npm fund` for details
+build	Install dependencies	2026-03-23T14:00:43.4120412Z 
+build	Install dependencies	2026-03-23T14:00:43.4121233Z 6 vulnerabilities (2 moderate, 3 high, 1 critical)
+build	Install dependencies	2026-03-23T14:00:43.4121966Z 
+build	Install dependencies	2026-03-23T14:00:43.4122396Z To address issues that do not require attention, run:
+build	Install dependencies	2026-03-23T14:00:43.4123033Z   npm audit fix
+build	Install dependencies	2026-03-23T14:00:43.4123262Z 
+build	Install dependencies	2026-03-23T14:00:43.4123459Z To address all issues, run:
+build	Install dependencies	2026-03-23T14:00:43.4123911Z   npm audit fix --force
+build	Install dependencies	2026-03-23T14:00:43.4124163Z 
+build	Install dependencies	2026-03-23T14:00:43.4124352Z Run `npm audit` for details.
+build	Build with Next.js	﻿2026-03-23T14:00:43.4529353Z ##[group]Run npm run build
+build	Build with Next.js	2026-03-23T14:00:43.4529631Z [36;1mnpm run build[0m
+build	Build with Next.js	2026-03-23T14:00:43.4578973Z shell: /usr/bin/bash -e {0}
+build	Build with Next.js	2026-03-23T14:00:43.4579213Z env:
+build	Build with Next.js	2026-03-23T14:00:43.4579372Z   GITHUB_PAGES: true
+build	Build with Next.js	2026-03-23T14:00:43.4579566Z ##[endgroup]
+build	Build with Next.js	2026-03-23T14:00:43.5723680Z 
+build	Build with Next.js	2026-03-23T14:00:43.5724041Z > portfolio@0.1.0 build
+build	Build with Next.js	2026-03-23T14:00:43.5724442Z > next build
+build	Build with Next.js	2026-03-23T14:00:43.5724646Z 
+build	Build with Next.js	2026-03-23T14:00:43.7907355Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+build	Build with Next.js	2026-03-23T14:00:44.1306447Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+build	Build with Next.js	2026-03-23T14:00:44.1398408Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+build	Build with Next.js	2026-03-23T14:00:44.1399543Z This information is used to shape Next.js' roadmap and prioritize features.
+build	Build with Next.js	2026-03-23T14:00:44.1401013Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+build	Build with Next.js	2026-03-23T14:00:44.1402340Z https://nextjs.org/telemetry
+build	Build with Next.js	2026-03-23T14:00:44.1402626Z 
+build	Build with Next.js	2026-03-23T14:00:44.1537525Z    ▲ Next.js 16.0.1 (Turbopack)
+build	Build with Next.js	2026-03-23T14:00:44.1538302Z 
+build	Build with Next.js	2026-03-23T14:00:44.2221707Z    Creating an optimized production build ...
+build	Build with Next.js	2026-03-23T14:00:44.3369433Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+build	Build with Next.js	2026-03-23T14:00:48.5992954Z  ✓ Compiled successfully in 4.1s
+build	Build with Next.js	2026-03-23T14:00:48.6059117Z    Running TypeScript ...
+build	Build with Next.js	2026-03-23T14:00:51.7598664Z    Collecting page data ...
+build	Build with Next.js	2026-03-23T14:00:51.8707732Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+build	Build with Next.js	2026-03-23T14:00:51.8817645Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+build	Build with Next.js	2026-03-23T14:00:51.9005785Z [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+build	Build with Next.js	2026-03-23T14:00:52.1773106Z Error: Missing API key. Pass it to the constructor `new Resend("re_123")`
+build	Build with Next.js	2026-03-23T14:00:52.1774909Z     at new <anonymous> (.next/server/chunks/[root-of-the-server]__ba35f365._.js:2:128595)
+build	Build with Next.js	2026-03-23T14:00:52.1776087Z     at module evaluation (.next/server/chunks/[root-of-the-server]__ba35f365._.js:2:128136)
+build	Build with Next.js	2026-03-23T14:00:52.1777168Z     at instantiateModule (.next/server/chunks/[turbopack]_runtime.js:715:9)
+build	Build with Next.js	2026-03-23T14:00:52.1778217Z     at instantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:743:12)
+build	Build with Next.js	2026-03-23T14:00:52.1779347Z     at getOrInstantiateRuntimeModule (.next/server/chunks/[turbopack]_runtime.js:756:12)
+build	Build with Next.js	2026-03-23T14:00:52.1780387Z     at Object.m (.next/server/chunks/[turbopack]_runtime.js:765:18)
+build	Build with Next.js	2026-03-23T14:00:52.1781251Z     at Object.<anonymous> (.next/server/app/api/contact/route.js:6:3)
+build	Build with Next.js	2026-03-23T14:00:52.1826395Z 
+build	Build with Next.js	2026-03-23T14:00:52.1828547Z > Build error occurred
+build	Build with Next.js	2026-03-23T14:00:52.1884120Z Error: Failed to collect page data for /api/contact
+build	Build with Next.js	2026-03-23T14:00:52.1888785Z     at ignore-listed frames {
+build	Build with Next.js	2026-03-23T14:00:52.1889449Z   type: 'Error'
+build	Build with Next.js	2026-03-23T14:00:52.1889931Z }
+build	Build with Next.js	2026-03-23T14:00:52.2242886Z ##[error]Process completed with exit code 1.
+build	Post Checkout	﻿2026-03-23T14:00:52.2335790Z Post job cleanup.
+build	Post Checkout	2026-03-23T14:00:52.3306463Z [command]/usr/bin/git version
+build	Post Checkout	2026-03-23T14:00:52.3343899Z git version 2.53.0
+build	Post Checkout	2026-03-23T14:00:52.3388736Z Temporarily overriding HOME='/home/runner/work/_temp/ed4e8594-f041-4564-8748-3be02ee234fa' before making global git config changes
+build	Post Checkout	2026-03-23T14:00:52.3390260Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Checkout	2026-03-23T14:00:52.3395734Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/monebz/monebz
+build	Post Checkout	2026-03-23T14:00:52.3440016Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Checkout	2026-03-23T14:00:52.3476053Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Checkout	2026-03-23T14:00:52.3720049Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Checkout	2026-03-23T14:00:52.3741646Z http.https://github.com/.extraheader
+build	Post Checkout	2026-03-23T14:00:52.3754931Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Checkout	2026-03-23T14:00:52.3788162Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Checkout	2026-03-23T14:00:52.4021740Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Checkout	2026-03-23T14:00:52.4053329Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-03-23T14:00:52.4397665Z Cleaning up orphan processes
+build	Complete job	2026-03-23T14:00:52.4697253Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, actions/configure-pages@v5, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
